@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.ComponetModel.DataAnnotations;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace PetAdoptSite.Models
 {
@@ -11,14 +11,14 @@ namespace PetAdoptSite.Models
     /// </summary>
     public class Pets
     {
-        [Reqired]
+        [Required]
         [Key]
         public int Id { get; set; }
 
         /// <summary>
         /// The Pet commonly known Breed
         /// </summary>
-        [Reqired]
+        [Required]
         [StringLength(20)]
         public string Breed { get; set; }
 
