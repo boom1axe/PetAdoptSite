@@ -38,6 +38,5 @@ namespace PetAdoptSite.Models
         /// </summary>
         [DataType(DataType.Currency)]
         public double Price { get; set; }
-
     }
 }

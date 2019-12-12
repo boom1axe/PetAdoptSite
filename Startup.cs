@@ -45,6 +45,11 @@ namespace PetAdoptSite
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
+        public void ConfigureMyDBContext(DbContextOptionsBuilder options)
+        {
+            options.UseSqlServer("DefaultConnection");
+        }
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {

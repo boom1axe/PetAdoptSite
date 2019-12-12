@@ -12,5 +12,8 @@ namespace PetAdoptSite.Data
             : base(options)
         {
         }
+        // Add a DB for each enity you want to add to
+        // keep track of in the database
+        public DbSet<Models.Pets> Pets { get; set; }
     }
 }
